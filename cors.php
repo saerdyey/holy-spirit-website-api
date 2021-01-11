@@ -1,5 +1,6 @@
 <?php
 
+function cors(){
 // Allow from any origin
 if(isset($_SERVER["HTTP_ORIGIN"]))
 {
@@ -27,5 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "OPTIONS")
     exit(0);
 }
 //From here, handle the request as it is ok
+}
+
 
 ?>
